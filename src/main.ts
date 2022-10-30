@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import * as antIcons from '@ant-design/icons-vue'
 import './config'
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+
+app.use(router).mount('#app')

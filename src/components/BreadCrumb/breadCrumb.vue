@@ -59,6 +59,6 @@ const handleJumpLink = (item: any) => {
 
 <style lang="less" scoped>
 .bread-crumb-container {
-  padding: 12px 0;
+  padding: 0.15rem 0;
 }
 </style>
