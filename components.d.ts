@@ -20,6 +20,7 @@ declare module '@vue/runtime-core' {
     AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     ARow: typeof import('ant-design-vue/es')['Row']
     ASpace: typeof import('ant-design-vue/es')['Space']
+    BreadCrumb: typeof import('./src/components/BreadCrumb/breadCrumb.vue')['default']
     IconFont: typeof import('./src/components/Icon/iconFont.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

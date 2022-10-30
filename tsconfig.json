@@ -33,7 +33,7 @@
     "tests/**/*.ts",
     "tests/**/*.tsx",
     "./auto-imports.d.ts"
-  ],
+, "src/utils/flexible.js"  ],
   "exclude": [
     "node_modules"
   ]

@@ -37,3 +37,10 @@ export function verifyWordNumber (value: any): boolean {
   const reg = /^[a-z0-9A-Z]+$/
   return reg.test(value)
 }
+
+/*
+   * @description 外部svg
+   */
+export function validateExternal(value: any): boolean {
+  return /^(https?:|mailto:|tel:)/.test(value)
+}
