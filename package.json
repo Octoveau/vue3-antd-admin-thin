@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dll": "webpack --config ./webpack.dll.js",
-    "husky":"husky install"
+    "husky": "npx husky install"
   },
   "dependencies": {
     "@antv/g2": "^4.2.8",
