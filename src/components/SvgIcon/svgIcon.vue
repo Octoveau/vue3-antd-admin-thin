@@ -3,7 +3,7 @@
     v-if="isExternal"
     :style="styleExternalIcon"
     class="svg-external-icon svg-icon"
-  />
+  ></div>
   <svg v-else :class="svgClass" aria-hidden="true">
     <use :xlink:href="iconName" />
   </svg>

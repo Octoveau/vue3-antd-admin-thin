@@ -35,20 +35,22 @@
 </template>
 
 <script setup lang="ts">
-import { DownOutlined } from '@ant-design/icons-vue'
-import { Ref } from 'vue'
-
-const userName: Ref<string> = ref<string>('Administator')
+import { DownOutlined } from '@ant-design/icons-vue';
+import { useRouter } from 'vue-router';
+const userName = ref<string>('Administator');
+const router = useRouter();
 
 // 个人中心跳转
 const handleJumpToPersonal = () => {
-  console.log('跳转')
-}
+  console.log('跳转');
+};
 
 // 退出登录
 const handleLogout = () => {
-  console.log('退出登录')
-}
+  router.push({
+    name: 'Logout'
+  });
+};
 </script>
 
 <style lang="less" scoped>

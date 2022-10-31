@@ -3,14 +3,14 @@
 </template>
 
 <script setup lang="ts">
-  const props = defineProps({
-    icon: {
-      type: String,
-      required: true
-    },
-    style: {
-      type: Object,
-      default: () => ({})
-    }
-  })
+const props = defineProps({
+  icon: {
+    type: String,
+    required: true
+  },
+  style: {
+    type: Object,
+    default: () => ({})
+  }
+});
 </script>

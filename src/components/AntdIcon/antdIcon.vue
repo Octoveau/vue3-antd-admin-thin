@@ -1,5 +1,5 @@
 <template>
-  <component :is="antdIcon"></component>
+  <component :is="antdIcon" />
 </template>
 
 

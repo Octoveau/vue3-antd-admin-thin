@@ -11,20 +11,11 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
+    "types": ["webpack-env"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
     "src/**/*.ts",
@@ -32,9 +23,9 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "./auto-imports.d.ts"
-, "src/utils/flexible.js"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "./auto-imports.d.ts",
+    "src/utils/flexible.js",
+    "src/router/auth.js"
+  ],
+  "exclude": ["node_modules"]
 }

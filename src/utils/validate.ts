@@ -2,7 +2,7 @@
 * @description 判断是否存在中文字符
 */
 export const validateChinese = (value: any): boolean => {
-  const regex: RegExp = /[\u4e00-\u9fa5]/g
+  const regex = /[\u4e00-\u9fa5]/g
   return regex.test(value)
 }
 
