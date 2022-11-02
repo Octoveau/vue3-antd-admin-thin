@@ -6,7 +6,7 @@
       :index="item.menu_name"
     >
       <template #icon>
-        <component :is="$antIcons[item.menu_icon]" />
+        <Icon :icon="item.menu_icon" v-if="item.menu_icon" />
       </template>
       <template #title>
         <span>{{ item.menu_name }}</span>
@@ -15,7 +15,7 @@
     </a-sub-menu>
     <a-menu-item v-else :index="item.menu_url ? item.menu_url : ''" :key="item.menu_url" @click="router.push(item.menu_url)">
       <template #icon>
-        <i :class="item.menu_icon ? item.menu_icon : 'no-icon'"></i>
+        <Icon :icon="item.menu_icon" v-if="item.menu_icon" />
       </template>
       <span>{{ item.menu_name }}</span>
     </a-menu-item>
@@ -27,9 +27,10 @@ import { MailOutlined } from '@ant-design/icons-vue';
 import { PropType } from 'vue';
 import { useRouter } from 'vue-router'
 import { MenuListInterface } from './menu.interface'
+import { Icon } from '../AntdIcon/antdIcon';
 export default {
   name: 'MenuItem',
-  components: {MailOutlined},
+  components: {MailOutlined, Icon},
   props: {
     menuList: {
       type: Array as PropType<MenuListInterface[]>,
