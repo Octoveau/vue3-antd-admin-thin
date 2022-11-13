@@ -1,10 +1,11 @@
+import { isObject } from './is'
 class Storage {
   constructor() {
 
   }
 
   setStorage(key: string, value: any) {
-    if ($IS.isObject(value)) {
+    if (isObject(value)) {
       sessionStorage.setItem(key, JSON.stringify(value))
     } else {
       sessionStorage.setItem(key, value)
