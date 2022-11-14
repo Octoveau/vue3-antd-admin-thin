@@ -23,14 +23,13 @@
 </template>
 
 <script lang="ts">
-import { MailOutlined } from '@ant-design/icons-vue';
 import { PropType } from 'vue';
 import { useRouter } from 'vue-router'
 import { MenuListInterface } from './menu.interface'
 import { Icon } from '../AntdIcon/antdIcon';
 export default {
   name: 'MenuItem',
-  components: {MailOutlined, Icon},
+  components: {Icon},
   props: {
     menuList: {
       type: Array as PropType<MenuListInterface[]>,
@@ -39,7 +38,6 @@ export default {
   },
   setup () {
     const router = useRouter()
-
     return {
       router
     }

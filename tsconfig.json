@@ -25,7 +25,8 @@
     "tests/**/*.tsx",
     "./auto-imports.d.ts",
     "src/utils/flexible.js",
-    "src/router/auth.js"
+    "src/router/auth.js",
+    "src/image.d.ts"
   ],
   "exclude": ["node_modules"]
 }
