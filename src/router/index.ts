@@ -3,7 +3,7 @@ import adminRouters from './admin'
 import authRouters from './auth'
 const routes:any=[...adminRouters,...authRouters]
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.NODE_ENV === 'production' ? '/vue3-template' : '/'),
   routes,
 })
 
