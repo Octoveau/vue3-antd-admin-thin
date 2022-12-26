@@ -8,7 +8,7 @@ export const Icon = (props: { icon: any; }) => {
     // 当存在短横线时
     if (iconName.includes('-')) {
       let icon = ''
-      let iconNameArr = iconName.split('-').map(item => {
+      const iconNameArr = iconName.split('-').map(item => {
         let str = ''
         const characters = [...item]
         characters[0] = characters[0].toLocaleUpperCase()
