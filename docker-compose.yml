@@ -1,0 +1,8 @@
+version: '2'
+services:
+  vue3-admin-template:
+    build: .
+    image: registry.cn-chengdu.aliyuncs.com/octoveau/vue3-admin-template
+    ports:
+      - '8887:80'
+    container_name: vue3-admin-template-container
