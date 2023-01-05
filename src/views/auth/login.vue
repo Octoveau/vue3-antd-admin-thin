@@ -57,6 +57,8 @@
 
 <script setup lang="ts">
 import { useRouter, useRoute, RouteLocationRaw } from 'vue-router';
+import { Icon } from '@/components/AntdIcon/antdIcon';
+import logo from '@/assets/images/pic3.png';
 import { Form, message } from 'ant-design-vue';
 import { setUserInfo } from '@/utils/auth';
 const useForm = Form.useForm;
