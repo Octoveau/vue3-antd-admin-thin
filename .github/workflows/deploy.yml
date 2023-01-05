@@ -15,7 +15,7 @@ jobs:
           node-version: '16.x'
       - name: step Build Project 🚀
         run: |
-          yarn install
+          npm i
           npm run build
       - name: SSH Server Deploy 🚀
         uses: easingthemes/ssh-deploy@v2.2.11
