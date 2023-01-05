@@ -1,4 +1,4 @@
-name: deploy vue3-admin-template 🚀
+name: deploy vue2-admin-template 🚀
 on:
   push:
     branches:
@@ -15,17 +15,17 @@ jobs:
           node-version: '16.x'
       - name: step Build Project 🚀
         run: |
-          npm i
-          npm run build
+          yarn install
+          yarn run build
       - name: SSH Server Deploy 🚀
         uses: easingthemes/ssh-deploy@v2.2.11
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          ARGS: '-avzrt --delete'
+          ARGS: '-avzr --delete'
           SOURCE: './*'
-          REMOTE_HOST: '47.109.22.178'
-          REMOTE_USER: 'root'
-          TARGET: '/www/looper/vue3-template-protal'
+          REMOTE_HOST: ${{ secrets.USER_HOST }}
+          REMOTE_USER: ${{ secrets.USER_NAME }}
+          TARGET: ${{secrets.SERVER_SAVE_PATH}}
           EXCLUDE: '/node_modules/'
       - name: Login To Docker 🚀
         uses: docker/login-action@v1
