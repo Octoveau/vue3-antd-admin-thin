@@ -3,8 +3,8 @@ const Components = require('unplugin-vue-components/webpack');
 const { AntDesignVueResolver } = require('unplugin-vue-components/resolvers');
 const path = require('path');
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+//const BundleAnalyzerPlugin =
+require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const DllReferencePlugin = require('webpack').DllReferencePlugin;
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 const fs = require('fs');
@@ -54,7 +54,6 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new SpeedMeasurePlugin(),
-      new BundleAnalyzerPlugin(),
       // DLL预打包
       ...dllReferencePluginArray,
       ...addAssetsPluginArray,
